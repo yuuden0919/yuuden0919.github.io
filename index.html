@@ -26,6 +26,14 @@
     line-height: 1.85;
     font-size: 15px;
   }
+    /* ─── Series list (連載シリーズのリンク列挙) ─── */
+    .series-list { list-style: none; margin: 2px 0 16px; padding: 0; display: grid; gap: 7px; }
+    .series-list li { font-size: 12.5px; line-height: 1.7; }
+    .series-num { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--accent); margin-right: 9px; letter-spacing: 0.08em; }
+    .series-list a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 1px; transition: color 0.2s, border-color 0.2s; }
+    .series-list a:hover { color: var(--accent); border-color: var(--accent); }
+    .works-lead { font-size: 13px; color: var(--muted); line-height: 1.95; margin-bottom: 24px; }
+
 
   /* ─── Nav ─── */
   nav {
@@ -580,6 +588,7 @@
     <a href="#flow">仕事の進め方</a>
     <a href="#media">料金</a>
     <a href="#portfolio">実績</a>
+      <a href="#works">制作物</a>
     <a href="#contact">お問い合わせ</a>
   </div>
 </nav>
@@ -598,12 +607,12 @@
   </p>
   <div class="hero-stats">
     <div class="stat-badge">
-      <span class="stat-num">8本+</span>
+      <span class="stat-num">30本+</span>
       <span class="stat-label">累計執筆本数</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-badge">
-      <span class="stat-num">22,800字+</span>
+      <span class="stat-num">150,000字+</span>
       <span class="stat-label">累計執筆文字数</span>
     </div>
     <div class="stat-divider"></div>
@@ -934,6 +943,54 @@
 
     <div class="portfolio-card">
       <div class="portfolio-meta">
+        <span class="portfolio-badge">商業媒体</span>
+        <span class="portfolio-badge">構成・執筆</span>
+        <span class="portfolio-badge">資格・キャリア</span>
+      </div>
+      <h3 class="portfolio-title">社労士になるには？元社労士が受験資格から登録までの流れと働くリアルを解説</h3>
+      <p class="portfolio-summary">受験資格・試験制度・登録手続きを順に追いながら、資格を取ったあとの働き方と収入の実際までを扱いました。制度の解説で終わらせず、実際に社労士として実務に就いた立場から「受験前に知っておきたかったこと」を書いています。</p>
+      <a href="https://www.best-shingaku.net/s-matome/skill/c004123.php" class="portfolio-link" target="_blank" rel="noopener">記事を見る</a>
+      <p class="portfolio-info">担当：構成・執筆 ／ ベスト進学ネット ／ 資格・キャリア分野</p>
+    </div>
+
+    <div class="portfolio-card">
+      <div class="portfolio-meta">
+        <span class="portfolio-badge">商業媒体</span>
+        <span class="portfolio-badge">構成・執筆</span>
+        <span class="portfolio-badge">資格・キャリア</span>
+      </div>
+      <h3 class="portfolio-title">簿記と社労士は相性が良い？元社会保険労務士がメリットやおすすめの取得順を解説</h3>
+      <p class="portfolio-summary">2つの資格が実務でどう噛み合うかという観点から、重なる部分と役割の違いを整理。「どちらを先に取るべきか」という読者の迷いに対して、目指す働き方ごとに順序を示す構成にしました。</p>
+      <a href="https://www.best-shingaku.net/s-matome/skill/c003928.php" class="portfolio-link" target="_blank" rel="noopener">記事を見る</a>
+      <p class="portfolio-info">担当：構成・執筆 ／ ベスト進学ネット ／ 資格・キャリア分野</p>
+    </div>
+
+    <div class="portfolio-card">
+      <div class="portfolio-meta">
+        <span class="portfolio-badge">連載シリーズ</span>
+        <span class="portfolio-badge">全8記事</span>
+        <span class="portfolio-badge">地域・住まい</span>
+      </div>
+      <h3 class="portfolio-title">北摂住まいガイド／豊中市エリア 全8記事</h3>
+      <p class="portfolio-summary">親記事1本と子記事7本からなるシリーズを一括で担当しました。各エリアの交通・買い物・医療・治安・学区を、自治体や事業者の一次情報に当たって整理。数値には出典と取得時点を添え、確認できなかった項目は「未取得」として明示する方針で統一しています。リサーチから WordPress への入稿までを通して対応しました。</p>
+      <ul class="series-list">
+          <li><span class="series-num">01</span><a href="https://hokusetsu-sumai.jp/toyonaka/" target="_blank" rel="noopener">豊中市の住みやすさ（親記事）</a></li>
+          <li><span class="series-num">02</span><a href="https://hokusetsu-sumai.jp/toyonaka-security/" target="_blank" rel="noopener">治安・犯罪件数の推移</a></li>
+          <li><span class="series-num">03</span><a href="https://hokusetsu-sumai.jp/toyonaka-education/" target="_blank" rel="noopener">学区・教育環境</a></li>
+          <li><span class="series-num">04</span><a href="https://hokusetsu-sumai.jp/senrichuo-area/" target="_blank" rel="noopener">千里中央エリア</a></li>
+          <li><span class="series-num">05</span><a href="https://hokusetsu-sumai.jp/ryokuchipark-area/" target="_blank" rel="noopener">緑地公園エリア</a></li>
+          <li><span class="series-num">06</span><a href="https://hokusetsu-sumai.jp/okamachi-area/" target="_blank" rel="noopener">岡町・豊中駅エリア</a></li>
+          <li><span class="series-num">07</span><a href="https://hokusetsu-sumai.jp/shonai-area/" target="_blank" rel="noopener">庄内・三国周辺エリア</a></li>
+          <li><span class="series-num">08</span><a href="https://hokusetsu-sumai.jp/hotarugaike-area/" target="_blank" rel="noopener">蛍池エリア</a></li>
+      </ul>
+      <a href="https://hokusetsu-sumai.jp/toyonaka/" class="portfolio-link" target="_blank" rel="noopener">シリーズ親記事を見る</a>
+      <p class="portfolio-info">担当：リサーチ・構成・執筆・WordPress入稿 ／ 全8記事 ／ 地域・住まい分野</p>
+    </div>
+
+
+
+    <div class="portfolio-card">
+      <div class="portfolio-meta">
         <span class="portfolio-badge">SEO記事</span>
         <span class="portfolio-badge">構成・執筆</span>
         <span class="portfolio-badge">キャリア・労務</span>
@@ -943,6 +1000,11 @@
       <a href="https://www.taishoku-station.com/know-how/career/retirement-procedures-complete-guide/" class="portfolio-link" target="_blank" rel="noopener">記事を見る</a>
       <p class="portfolio-info">担当：構成・執筆　／　約4,000字　／　キャリア・労務分野</p>
     </div>
+
+  </div>
+
+  <p class="section-label" style="margin-top:48px;">自主制作の見本</p>
+  <div class="portfolio-list">
 
     <div class="portfolio-card sub">
       <div class="portfolio-meta">
@@ -976,6 +1038,24 @@
 </section>
 
 <!-- Contact -->
+<section id="works">
+  <p class="section-label">制作物</p>
+  <p class="works-lead">記事の仕事で使っている「複雑な情報を、出典付きで、確からしさが見える形に整理する」手順は、文章だけのものではありません。同じ考え方を画面の設計に持ち込んだ制作見本です。</p>
+  <div class="portfolio-list">
+    <div class="portfolio-card">
+      <div class="portfolio-meta">
+        <span class="portfolio-badge">制作見本</span>
+        <span class="portfolio-badge">Webアプリケーション</span>
+        <span class="portfolio-badge">情報設計</span>
+      </div>
+      <h3 class="portfolio-title">LIVING EVIDENCE — 住まいを決める前に、判断材料を整理する</h3>
+      <p class="portfolio-summary">公的データをもとに、住まい選びの判断材料を一つの画面にまとめる Web アプリケーションです。一次情報・参考値・未取得の情報を画面上で明確に分け、どこまでが確かで、どこからが未確認なのかが読み手に伝わる設計にしました。地図・出典一覧・カテゴリ別の整理までを含め、企画から実装まで担当しています。</p>
+      <a href="https://living-evidence.yuuden0919.workers.dev/" class="portfolio-link" target="_blank" rel="noopener">サイトを見る</a>
+      <p class="portfolio-info">制作見本（架空のデモ作品・実在する企業やサービスの案件ではありません） ／ Next.js・React ／ 企画・設計・実装</p>
+    </div>
+  </div>
+</section>
+
 <section id="contact">
   <div class="contact-box">
     <h2>お仕事のご相談</h2>
